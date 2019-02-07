@@ -1,0 +1,949 @@
+/* MENU PRINCIPAL */
+
+html {
+  background: #111;
+}
+
+header {
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.5em;
+  background: #111;
+  border-bottom: 1px solid rgba(255, 205, 60, 0.1);
+  color: #ffcd3c;
+}
+
+header.home,
+header.ver {
+  background: #222;
+}
+
+header a {
+  font-weight: 600;
+  font-size: .95em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FB4B2B;
+}
+
+header a:hover {
+  background: #FB4B2B;
+  color: #eee;
+}
+
+h1 {
+  position: relative;
+  vertical-align: middle;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h1 a {
+  font-size: .5em;
+  height: 1.8rem;
+  background: #FB4B2B;
+  vertical-align: middle;
+  color: #eee;
+  padding: 0 .8em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 2em;
+}
+
+header + ul {
+  background: #222;
+  color: #FB4B2B;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1em;
+}
+
+header + ul:before {
+  content: "Corrija los siguientes errores e intente nuevamente: ";
+  display: block;
+  color: #ffcd3c;
+  font-size: .9em;
+  margin-bottom: .5em;
+}
+
+/* BUSCADOR */
+
+.main-search-box > form .icon-buscar,
+.main-search-box > form .icon-cerrar {
+  display: inline-block;
+  height: 1.8rem;
+  margin-left: .2em;
+  width: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background: #FB4B2B;
+}
+
+.main-search-box > form input {
+  line-height: 1.8rem;
+  padding: 0 .7em;
+  width: 10em;
+  margin-left: 1em;
+  font-size: .8em;
+  font-style: italic;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.main-search-boxx > form input {
+  line-height: 1.8rem;
+  padding: 0 .7em;
+  width: 9em;
+  margin-left: 1em;
+  font-size: .8em;
+  font-style: italic;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+.main-search-boxx > form input {
+    transition: all .4s;
+  }
+	
+.main-search-boxx > form .icon-buscar,
+.main-search-boxx > form .icon-cerrar {
+  display: inline-block;
+  height: 1.8rem;
+  margin-left: .2em;
+  width: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #fff;
+  background: #FB4B2B;
+}
+
+/* SLIDER CENTRAL */
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.banner-home {
+  background: #111;
+  padding: 1.5em 0;
+  overflow: hidden;
+}
+
+.slider-home__description {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  padding: 0 2em;
+  font-size: .85em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.slider-home__title {
+  color: #fff !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0 .5em 0;
+}
+
+/* CAPITULOS RECIENTES */
+
+#main {
+  background: #222;
+  padding-bottom: 3em;
+  -ms-flex: auto;
+  flex: auto;
+}
+
+main h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.capitulos-grid__item__link {
+  font-size: .9em;
+  font-style: italic;
+  color: #FB4B2B;
+  display: block;
+  margin-top: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-transform: normal;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+.video-container .alert-infos {
+    display: none;
+    line-height: 0px;
+    padding: 0px 0 0px 0;
+    font-size: 11px;
+    font-family: Arial;
+    color: #FB4B2B;
+    text-align: right;
+    width: 78%;
+}
+
+.video-container .alert-infos a {
+    color: #FB4B2B;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.video-container .alert-infos a:hover {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.2em;
+  }
+    
+.video-container .alert-infos {
+    width: 100%;
+}
+}
+
+/* SERIES RECIENTES */
+
+.anime--flip__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform: rotateY(180deg);
+}
+
+.anime__data {
+  font-size: .8em;
+  background: rgba(251, 75, 43, 0.6);
+  padding: 1em;
+  color: #ccc;
+  -ms-flex: auto;
+  flex: auto;
+  position: relative;
+}
+
+.anime__synopsis {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  color: #fff;
+  font-size: .82em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.anime__title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 .5em;
+  text-transform: uppercase;
+}
+
+.anime__title a {
+  color: #fff;
+}
+
+.anime__status {
+  background: #ffcd3c;
+  padding: 0 .8em;
+  line-height: 2rem;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+.main-footer {
+  background: #111;
+  padding: 1em 0;
+  margin-top: auto;
+  border-top: 1px solid rgba(251, 75, 43, 0.3);
+}
+
+.main-footer__title {
+  margin: 0 0 .5em;
+  color: #FB4B2B;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.main-footer__description {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: .8em;
+  line-height: 1.2;
+}
+
+.main-footer .sociales a {
+  background: #ffcd3c;
+  margin: 0 .5em;
+  width: 1.5em;
+  display: inline-block;
+  text-align: center;
+  height: 1.5em;
+  line-height: 1.5em;
+  border-radius: 50%;
+  color: #111;
+  opacity: .5;
+}
+
+/* INFORMACION ANIMES */
+
+.serie-header h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #ffcd3c;
+  font-weight: 300;
+  margin: 0;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 479px) {
+  .serie-header h1 {
+    font-size: 1.2em;
+  }
+    
+.video-container .alert-infos {
+    width: 100%;
+}
+}
+
+.serie-header__tags a,
+.serie-header__genero a {
+  background: none;
+  border: 1px solid rgba(251, 75, 43, 0.5);
+  color: #FB4B2B;
+  display: block;
+  line-height: 1.6;
+  margin: 0 .5em;
+  padding: 0 .7em;
+}
+
+.serie-header__tags a:hover,
+.serie-header__genero a:hover {
+  background: rgba(251, 75, 43, 0.9);
+  color: #fff;
+}
+
+.serie-description {
+  padding-top: .5em;
+  font-size: .85em;
+  color: #fff;
+  margin: 0;
+}
+
+.serie-description + a {
+  color: #ffcd3c;
+  cursor: pointer;
+  font-size: .85em;
+}
+
+.serie-capitulos__title {
+  color: #FB4B2B;
+  text-transform: uppercase;
+  margin: 1em 0 1.5em;
+  font-size: 2.5em;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(251, 75, 43, 0.5);
+}
+
+.serie-capitulos__list__item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: .3em;
+}
+
+.serie-capitulos__list__item:hover {
+  background: #FB4B2B;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.serie-capitulos__list__item:hover span {
+  -ms-flex-order: 1;
+  order: 1;
+  color: #fff;
+}
+
+.serie-capitulos__list__item:hover a {
+  padding-left: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.serie-capitulos__list__item span {
+  color: #fff;
+  font-size: 1.3em;
+  margin-right: .5em;
+}
+
+.serie-capitulos__list__item a {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  line-height: 3;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.serie-capitulos__list__item a:visited {
+  color: #29aa54;
+}
+
+.serie-capitulos__list__item a:visited:hover {
+  color: #ffcd3c;
+}
+
+.emision {
+  background: #29aa54 !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+.serie-header__metadata {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 1em;
+  font-size: .8em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ANIME BUSCADOR AVANZADO */
+
+.button {
+  display: inline-block;
+  background: none;
+  border: 1px solid #FB4B2B;
+  line-height: 2.8;
+  padding: 0 1.5em;
+  color: #FB4B2B;
+  text-transform: uppercase;
+  border-radius: .2em;
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  color: #fc765d;
+  background: none;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.filtro__title {
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(251, 75, 43, 0.5);
+  line-height: 2;
+  padding: 0 .5em;
+  font-size: .9em;
+  margin: 0 0 1em;
+}
+
+.filtro__option {
+  font-size: .85em;
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  line-height: 1.8;
+}
+
+.filtro [type="radio"] {
+  margin-right: .5em;
+}
+
+.filtro + input {
+  background: #FB4B2B;
+  border: none;
+  width: 100%;
+  line-height: 2;
+  text-transform: uppercase;
+  opacity: .8;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.filtro + input:hover {
+  opacity: 1;
+}
+
+.filtro .icon-fecha {
+  position: relative;
+  top: -2px;
+}
+
+.ver-filtros {
+  display: table;
+  margin: 1em 0;
+  font-size: .85rem;
+  line-height: 2.5;
+  padding: .3em 0;
+  width: 100%;
+  text-align: center;
+}
+
+.filtro-nuevo {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.filtro-nuevo.mostrar {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filtro-nuevo li {
+  display: block;
+  line-height: 2;
+  padding: 0 1em;
+  background: #FB4B2B;
+  margin: .4em;
+  -ms-flex: auto;
+  flex: auto;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.filtro-nuevo li:hover,
+.filtro-nuevo li.active {
+  background: #ffcd3c;
+  color: #111;
+}
+
+.filtros-avanzados {
+  display: none;
+}
+
+.activar-filtros {
+  padding-left: 0;
+  list-style: none;
+}
+
+.activar-filtros li {
+  color: #fff;
+  line-height: 3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding-left: 1em;
+  margin-bottom: .5em;
+}
+
+.activar-filtros li:hover,
+.activar-filtros li.active {
+  background: #ffcd3c;
+  color: #000;
+}
+
+.filtro .select2 {
+  width: 100% !important;
+}
+
+#select2-anio-results,
+#select2-letra-results {
+  color: #444 !important;
+}
+
+#select2-anio-results .select2-results__options,
+#select2-letra-results .select2-results__options {
+  color: #444 !important;
+}
+
+.main-aside {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(251, 75, 43, 0.4);
+  padding-bottom: 2em;
+}
+
+/* ANIME BUSCADOR PAGINACION */
+
+.pager {
+  list-style: none;
+  margin-top: 1.7rem;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.pager__item {
+  background: rgba(34, 34, 34, 0.95);
+  margin: 0 .1em;
+  border-radius: .2em;
+}
+
+.pager__item.active {
+  background-color: #FB4B2B;
+  border-radius: 50%;
+}
+
+.pager__item.active .pager__link:hover {
+  color: #eee;
+}
+
+.pager__link {
+  display: block;
+  height: 1.7rem;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: #eee;
+  font-size: 1.02rem;
+}
+
+.pager__link.first,
+.pager__link.last {
+  width: 2.55rem;
+}
+
+.pager__link:hover {
+  color: #ffcd3c;
+}
+
+/* VER ANIMES */
+
+.ver-anime {
+  background: #111;
+  padding-bottom: 1.5em;
+}
+
+.ver-anime h1 {
+  color: #ccc;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 1em;
+  border-bottom: none;
+}
+
+.ver-anime h1 a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: .4em;
+  line-height: 1.8rem;
+}
+
+/*.ver-anime .ed-video {
+  margin-bottom: 1em;
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+}*/
+
+.ver-anime__mirrors {
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ver-anime__mirrors:before {
+  content: "Opciones ";
+  margin-right: .5em;
+  color: #fff;
+}
+
+.ver-anime__mirrors a:hover,
+.ver-anime__mirrors a:active,
+.ver-anime__mirrors a.active {
+  background: #FB4B2B;
+  color: #fff;
+  border-color: #FB4B2B;
+}
+
+.link-veranime{
+  border: 1px solid rgba(251, 75, 43, 0.3);
+  line-height: 2.5;
+  color: #FB4B2B;
+  font-size: .9em;
+  padding: 0 1em;
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.ver-anime a:hover {
+  background: #FB4B2B;
+  color: #fff;
+}
+
+.ver-anime .icon-derecha,
+.ver-anime .icon-izquierda {
+  border: 1px solid rgba(251, 75, 43, 0.5);
+  color: #FB4B2B;
+  width: 2em;
+  height: 5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.2em;
+  opacity: .8;
+  position: relative;
+}
+
+.ver-anime .icon-derecha:hover,
+.ver-anime .icon-izquierda:hover {
+  background: #FB4B2B;
+  color: #fff;
+}
+
+.video-container .ed-video--dailymotion .icon-youtube:hover,
+.video-container .ed-video--dailymotion .icon-youtube:active {
+  color: #ffcd3c;
+}
+
+/* WIDGET */
+
+.WdgtCn{
+    border-radius:3px;
+    box-shadow:0 0 0px 0 rgba(0,0,0,.1);
+}
+
+.Title{
+    font-weight:700;
+    font-size:12px;
+    line-height:15px;
+    max-height:45px;
+    overflow:hidden;
+    margin-bottom:10px
+}
+    
+.hola {
+    line-height: 20px;
+    background-color: #FB4B2B;
+    position: absolute;
+    left: -2px;
+    bottom: -2px;
+    border-radius: 0 10px 0 0;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 8px;
+}
+    
+.Title a:hover, .Title a:active {
+color: #01bcf3;
+}
+   
+#Ytaila,
+#Ytaila img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+    
+.Ytaila {
+  position: relative;
+  display: block;
+}
+    
+.Ytaila:after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f06e";
+  font-size: 3em;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  transition: all .3s;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+}
+
+.Ytaila:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-55%, -50%);
+  width: 3em;
+  height: 3em;
+  z-index: 100;
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.Ytaila:hover:after,
+.Ytaila:hover:before {
+  opacity: 1;
+}
+
+/* MENU ANDROID */
+
+#navfondo {
+  background: #222;
+}
+
+#navtitulo {
+  background: #111;
+  color: #FB4B2B;
+  text-align:center;
+}
+
+.drawer-hamburger-icon{
+    position:relative;
+    display:block;margin-top:10px
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before{
+    width:100%;height:2px;
+    -webkit-transition:all .6s cubic-bezier(.19,1,.22,1);
+    transition:all .6s cubic-bezier(.19,1,.22,1);
+    background-color:#FFCD3C
+}
+
+.activar-filtrosx {
+  padding-left: 0;
+  list-style: none;
+}
+
+.activar-filtrosx li {
+  color: #fff;
+  line-height: 3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  padding-left: 1em;
+  margin-bottom: .5em;
+}
+
+.activar-filtrosx li:hover,
+.activar-filtrosx li.active {
+  background: #ffcd3c;
+  color: #000;
+}
+
+#link_bar a { 
+font-weight: 600;
+font-size: .95em;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+color: #FB4B2B;
+}
+#link_bar a:hover {
+	background: 0;
+	color: #eee;
+}
+
+
+/* DESCARGA */
+
+.enlace-descarga a {
+  border: 1px solid rgba(251, 75, 43, 0.3);
+  color: #fb4b2b;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.5em;
+  margin-bottom: 0;
+  padding: 0 1.5em;
+}
+
+.enlace-descarga a:hover {
+  background: #fb4b2b;
+  color: #fff;
+}
+/*
+     FILE ARCHIVED ON 17:33:28 Oct 29, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:22:15 Feb 05, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 88.551 (3)
+  esindex: 0.005
+  captures_list: 103.673
+  CDXLines.iter: 11.848 (3)
+  PetaboxLoader3.datanode: 106.374 (5)
+  exclusion.robots: 0.145
+  exclusion.robots.policy: 0.134
+  RedisCDXSource: 0.528
+  PetaboxLoader3.resolve: 41.162 (2)
+  load_resource: 103.365
+*/
